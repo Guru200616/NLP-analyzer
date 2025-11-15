@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  />
+  <title>NLP Text Analyzer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app">
+    <header class="app-header">
+      <h1>NLP Text Analyzer</h1>
+      <p>Analyze sentiment, stats, and keywords from your text.</p>
+    </header>
+
+    <main class="app-main">
+      <section class="input-section card">
+        <h2>Enter Text</h2>
+        <textarea
+          id="textInput"
+          placeholder="Paste or type your text here..."
+        ></textarea>
+        <div class="actions">
+          <button id="analyzeBtn">Analyze Text</button>
+          <button id="clearBtn" class="secondary">Clear</button>
+        </div>
+        <p id="errorMessage" class="error-message"></p>
+      </section>
+
+      <section class="results-grid">
+        <div class="card">
+          <h2>Sentiment</h2>
+          <p id="sentimentLabel" class="sentiment-label">–</p>
+          <p class="sentiment-score">
+            Score: <span id="sentimentScore">–</span><br />
+            Comparative: <span id="sentimentComparative">–</span>
+          </p>
+        </div>
+
+        <div class="card">
+          <h2>Text Stats</h2>
+          <ul class="stats-list">
+            <li>Words: <span id="wordCount">0</span></li>
+            <li>Characters: <span id="charCount">0</span></li>
+            <li>Reading time: <span id="readingTime">0</span> min</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h2>Top Keywords</h2>
+          <ul id="keywordsList" class="keywords-list">
+            <li>No keywords yet.</li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="app-footer">
+      <p>
+        Built with ❤️ using JavaScript, Express & simple NLP.
+      </p>
+      <p class="small">
+        Add this project to your GitHub as a Natural Language Processing demo.
+      </p>
+    </footer>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
