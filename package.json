@@ -1,0 +1,29 @@
+{
+  "name": "nlp-text-analyzer",
+  "version": "1.0.0",
+  "description": "A simple Natural Language Processing (NLP) text analyzer web app with sentiment analysis and keyword extraction.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "keywords": [
+    "NLP",
+    "sentiment",
+    "text-analysis",
+    "node",
+    "express",
+    "javascript"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "sentiment": "^5.0.2",
+    "stopword": "^2.0.8"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  }
+}
